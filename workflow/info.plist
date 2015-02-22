@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>multigeneris.alfred.workflow.bofhexcuses</string>
+	<key>category</key>
+	<string>Tools</string>
+	<key>connections</key>
+	<dict>
+		<key>9C8D0E22-3E9D-4B6B-B5FB-4FB1BBA23600</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>ED455517-2655-4276-B4E1-86340FFC84F3</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>8972A2A2-F00F-4639-982F-324358EF9DA5</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Sven Bischoff</string>
+	<key>description</key>
+	<string>This workflow returns a BOFH excuse.</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>BOFH Excuses</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>output</key>
+				<integer>0</integer>
+				<key>removeextension</key>
+				<false/>
+				<key>sticky</key>
+				<false/>
+				<key>text</key>
+				<string>Excuse copied to clipboard.</string>
+				<key>title</key>
+				<string>BOFH Excuses</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>ED455517-2655-4276-B4E1-86340FFC84F3</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>bofh</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Loading...</string>
+				<key>script</key>
+				<string>php -f bofhexcuses.php</string>
+				<key>title</key>
+				<string>BOFH Excuse</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>9C8D0E22-3E9D-4B6B-B5FB-4FB1BBA23600</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>8972A2A2-F00F-4639-982F-324358EF9DA5</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>OVERVIEW:
+
+This workflow returns a BOFH excuse.
+Excuse list is ©Jeff Ballard: http://pages.cs.wisc.edu/~ballard/bofh/.
+
+USAGE:
+
+Use the keyword ‚bofh’ to get a random excuse which then can be selected and copied to the clipboard pressing ‚Enter‘.</string>
+	<key>uidata</key>
+	<dict>
+		<key>8972A2A2-F00F-4639-982F-324358EF9DA5</key>
+		<dict>
+			<key>ypos</key>
+			<real>130</real>
+		</dict>
+		<key>9C8D0E22-3E9D-4B6B-B5FB-4FB1BBA23600</key>
+		<dict>
+			<key>ypos</key>
+			<real>70</real>
+		</dict>
+		<key>ED455517-2655-4276-B4E1-86340FFC84F3</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>http://multigeneris.org</string>
+</dict>
+</plist>
