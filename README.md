@@ -7,7 +7,7 @@ Excuse list is ©Jeff Ballard: http://pages.cs.wisc.edu/~ballard/bofh/.
 
 ## Install
 
-Download the [workflow](https://github.com/medienlampe/alfred2-bofhexcuses/raw/master/BOFHExcuse.alfredworkflow), then open it to install.
+Download the [workflow](https://github.com/medienlampe/alfred2-bofhexcuses/raw/master/BOFHExcuses.alfredworkflow), then open it to install.
 
 ## Usage
 
